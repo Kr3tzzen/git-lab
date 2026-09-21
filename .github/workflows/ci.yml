@@ -1,0 +1,19 @@
+name: CI Workflow
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run simple check
+        run: |
+          echo "Running static checks..."
+          test -f README.md || exit 1
