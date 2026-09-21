@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Line added in feature branch
+=======
+Line added directly in main branch
+>>>>>>> 5f7dce4dafc2e255087364c8f50f02e8c563762b
